@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.dam2t"},{"l":"com.dam2t.api"},{"l":"com.dam2t.dao"},{"l":"com.dam2t.model"},{"l":"com.dam2t.service"}];updateSearchResults();

@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "fd230677-2c0f-4c54-bff1-ec3822804fac",
+		"name": "SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cartas",
+			"item": [
+				{
+					"name": "getJuegoCartasByTemporada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cartas/temporada/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cartas",
+								"temporada",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getJuegoCartasById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cartas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cartas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveJuegoCartas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1,\n    \"editorial\":\"Mattel\",\n    \"nombre\":\"UNO\",\n    \"num_cartas\":108,\n    \"temporada\":1 \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cartas/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cartas",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeJuegoCartaById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"editorial\":\"Sirio\",\r\n    \"nombre\":\"Baraja Española\",\r\n    \"num_cartas\":40,\r\n    \"temporada\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cartas/change/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cartas",
+								"change",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rol",
+			"item": [
+				{
+					"name": "getJuegoRolById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rol//1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rol",
+								"",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllJuegoRol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rol"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveJuegoRol",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1,\n    \"editorial\":\"Epic Games\",\n    \"nivel\":50,\n    \"nombre\":\"Dauntless\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rol/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rol",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateJuegoRolById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/rol/update/1?nivel=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rol",
+								"update",
+								"1"
+							],
+							"query": [
+								{
+									"key": "nivel",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesa",
+			"item": [
+				{
+					"name": "getJuegoMesaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mesa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteJuegoMesaById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mesa/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveJuegoMesa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1,\n    \"descripcion\":\"Se juega con un dado y 4 fichas para cada uno de los jugadores\",\n    \"editorial\":\"IGUAZU\",\n    \"nombre\":\"Parchis\",\n    \"num_jugadores\":4,\n    \"tipo\":\"mesa\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/mesa/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateJuegoMesaById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mesa/update/1?descripcion=Es un juego de mesa derivado del pachisi y similar al ludo, al parqués y al parcheesi&tipo=entretenimineto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"update",
+								"1"
+							],
+							"query": [
+								{
+									"key": "descripcion",
+									"value": "Es un juego de mesa derivado del pachisi y similar al ludo, al parqués y al parcheesi"
+								},
+								{
+									"key": "tipo",
+									"value": "entretenimineto"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Merchandising",
+			"item": [
+				{
+					"name": "getJuegoMerchandisingById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/merchandising/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"merchandising",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllMerchandising",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/merchandising",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"merchandising"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveMerchandising",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1,\n    \"descripcion\":\"Aquí os dejamos una extensa colección de todo tipo de productos de merchandising de la serie JUEGO DE TRONOS de la mano de HBO\",\n    \"nombre\":\"Juego de Tronos\",\n    \"tipo\":\"exclusivo\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/merchandising/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"merchandising",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMerchandisingByTipo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/merchandising/tipo?tipo=exclusivo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"merchandising",
+								"tipo"
+							],
+							"query": [
+								{
+									"key": "tipo",
+									"value": "exclusivo"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
